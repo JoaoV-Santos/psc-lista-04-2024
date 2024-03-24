@@ -43,7 +43,5 @@ public class Questao05 {
 
     }
 
-    //System.out.println("\nSerão necessários " + anos + " anos para a população do país A ultrapasse ou iguale a população do país B.");
-
 }
 
