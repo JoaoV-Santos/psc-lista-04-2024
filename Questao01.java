@@ -1,22 +1,25 @@
 import java.util.Scanner;
 
-public class Questao01 {
+public class Questao10 {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        double nota = 11;
+        Scanner in = new Scanner(System.in);
 
+        int c = 0;
 
+        System.out.print("Informe o primeiro valor: ");
+        int a = in.nextInt();
+        System.out.print("Informe o segundo valor: ");
+        int b = in.nextInt();
 
-        while (nota < 0 || nota > 10) {
-            System.out.print("\nInforme uma nota entre 0 e 10: ");
-            nota = scanner.nextDouble();
-            if (nota >= 0 && nota <= 10) {
-                System.out.println("\nFim do Programa!");
-                break;
-            }
+        if (b < a){
+            c = a;
+            a = b;
+            b = c;
         }
 
+        for (int i = a; i < b; i++)
+            System.out.println(i);
 
-        scanner.close();
+        in.close();
     }
 }
